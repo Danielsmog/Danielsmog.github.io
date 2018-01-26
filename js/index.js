@@ -121,14 +121,16 @@
                 $("#mov").mouseenter(out);
             function over(){ this.animation.play() };
             function out(){ this.animation.reverse() };
-            } else if ( winwidth < 600) {
+            } else {
+            $('.menu').hide();   
+        } if ( winwidth < 600) {
             $('.nav-type').click(function() {
                 $(".menu").hide();
                 $(".cross").hide();
                 $(".hamburger").show();
             });
-        }
-    }     
+        }     
+    }
     $(function() {
         $(window).resize(loadResizer).trigger('resize');
     });
@@ -136,8 +138,8 @@
     
 
 
-
-        $(".hamburger").hide();
+    $(".cross").hide();
+        $(".hamburger").show();
         $(".hamburger").click(function() {
             $(".menu").slideToggle("fast", function() {
                 $(".cross").show();
