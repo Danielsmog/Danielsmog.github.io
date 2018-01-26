@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Projecto</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="css\form.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+<!-- expandable -->
+<header>
+	<button class="hamburger hide">&#9776;</button> 
+	<button class="cross hide">&#735;</button>		
+	<nav class="menu ">
+		<ul >	
+			<div class="w3-row">
+				<div class="w3-col m3 s12 ">
+					<li><a class = "nav-type" href="index.html?#inicio">Ínicio</a></li>
+				</div>
+				<div class="w3-col m3 s12 ">
+					<li><a class = "nav-type" href="index.html?#noticias">Notícias</a></li>
+				</div>
+				<div class="w3-col m3 s12 ">
+					<li><a class = "nav-type" href="index.html?#viagens">Viagens</a></li>
+				</div>
+				<div class="w3-col m3 s12 ">
+					<li><a class = "nav-type" href="index.html?#info">Info</a></li>                  
+				</div>
+			</div>	
+		</ul>
+	</nav>
+</header>
+
+<aside >
+	<div  class="onoffswitch" id="btn_query" >
+		<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+		<label class="onoffswitch-label" for="myonoffswitch">
+				<span class="onoffswitch-inner"></span>
+			<span class="onoffswitch-switch"></span>
+		</label>
+	</div>
+</aside>
+	<section class="container">
+		<video playsinline autoplay muted loop poster="images/form/palmtrees.jpg" id="vid" class="vdo_query">
+     		<source src="videos/landscape.mp4" type="video/mp4">
+		</video>
+	</section>
+	<main class="overlay">
+		<div class="w3-row">
+			<div class="w3-col l12 m12 s12 w3-center ">
+				<form action="action.html" method="post">
+					<h1>Viagens e Passeios</h1>
+					
+					<div >
+						<label for="nome">Nome</label><br>
+						<input type="text" minlength="2" required />
+					</div >
+					<div>
+						<label for="email">Endereço de email</label><br>
+						<input type="email" required />
+					</div>
+					<div>
+						<label > Planos: </label><br>
+						<select required  name="select-choice" id="select-choice ">
+							<option  value=""  readonly > Opções </option>
+							<option  value="1 dia" >1 dia</option>
+							<option  value="1 noite" >curta duração</option>
+							<option  value="1 a 7 noites" >média duração</option>
+							<option  value="1 a semanas" >longa duração</option>
+							<option  value="ida sem volta" >permanente</option>
+						</select>
+					</div>
+					<div>
+						<label for="feedback">Comentários ou sugestões</label><br>
+						<textarea rows="6" cols="30" name="feedback" placeholder="Ex:Viagem individual ou em grupo, tipo de alojamento"></textarea>
+					</div>
+					<div>
+							<label>Subscrição da Newsletter:</label><br>
+							<input type="checkbox" name="novidades" value="novidades">Novidades<br>
+					</div>
+					<div>
+						<input type="submit" value="Enviar"/>
+						<button type="reset" value="Reset" >Apagar</button>
+					</div>
+				</form>  
+			</div>
+		</div>
+</main>      
+<body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js\form.js"></script>
