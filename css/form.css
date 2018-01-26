@@ -319,6 +319,9 @@ video#vid {
     main{
         width:50vw;
     }
+    .overlay{
+        background-color: rgba(192,208,214,.5);
+    }
 	
 
 }
