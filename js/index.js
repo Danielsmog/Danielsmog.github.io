@@ -32,7 +32,7 @@
 
             $("#sectionBtn4").click(function() {
                 $('html, body').animate({
-                    scrollTop: $("#noticias").offset().top + 200
+                    scrollTop: $("#noticias").offset().top
                 }, 800);
                 event.preventDefault();
                 console.log($("#noticias").offset().top);
@@ -40,15 +40,15 @@
     
     //noticias
     var dados = [ 
-            {imagem:"images/noticias/destinos.jpg", titulo: "Os melhores destinos de 2017 do planeta! ", 
+            {imagem:"images/noticias/destinos2x.jpg", titulo: "Os melhores destinos de 2017 do planeta! ", 
             paragrafo:"Partir em viagem não significa que tens de gastar uma fortuna. Embora alguns destes destinos envolvam um voo de longo curso que pode sair caro, a experiência de viagem no destino e o baixo custo de vida compensam!",
             cols:"w3-col l3 m6 s12 w3-center"},
-            {imagem:"images/noticias/hotel.jpg",titulo: "3 hotéis de sonho no algarve... ", 
+            {imagem:"images/noticias/hotel2x.jpg",titulo: "3 hotéis de sonho no algarve... ", 
             paragrafo:"Aqui em casa, já se sabe, Ele cozinha e eu viajo, por isso, neste campo, a chef sou eu. E estes refúgios têm tudo o que nós gostamos: bom gosto, charme e preços aceitáveis.",
             cols:"w3-col l6 m6 s12 w3-center"},
-            {imagem:"images/noticias/accessories.jpg", titulo: "18 acessórios e itens para viagem incríveis que te vão surpreender!", 
+            {imagem:"images/noticias/accessories2x.jpg", titulo: "18 acessórios e itens para viagem incríveis que te vão surpreender!", 
             paragrafo:"Viajar requer planejamento e uma boa capacidade de priorização, pois afinal não cabe tudo na mala. Por isso, itens tecnológicos ou projetados pensando na escassez de espaço e na restrição de peso do viajante são muito bem vindos.",
-            cols:"w3-col l3  s12 w3-center"}
+            cols:"w3-col l3 s12 w3-center"}
         ];      
 
 
