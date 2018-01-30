@@ -140,21 +140,25 @@ section img:hover +  p {
 
 .s1{height:900px;
 	background:url("../images/caves.jpg") no-repeat center center fixed;
-}       
+} 
+
+.readable{
+	width:80vw;
+	margin:0 auto;
+	max-width: 1200px;		
+}
 
 .info {
-	font-size:18px;
-	font-weight:bold;
-	text-align: center;
-	line-height: 1.5em;
-	letter-spacing: 0.5px;
-	margin: 0 auto;
-	width: 80%;     
-	padding:5px;  
+	font-size:16px;
+	font-weight:normal;
+	text-align:left;
+	line-height:1.5em;
+	letter-spacing:0.5px;	
+	width:80%;     
+	padding:15px;  
 	background-color:rgba(192,208,214, .3);
-	border: solid 8px rgba(100,149,237, .9);
-	border-radius:4px;
-	background-clip: content-box;			
+	border-radius:10px;
+	background-clip: content-box;		
 }
 
 
@@ -324,6 +328,9 @@ div  {
 	nav li {
 		float:none !important;	
 	}
+	.readable{
+		width:80vw;
+	}
 	
 	/* ul div{
 		background-color: rgba(255, 255, 255, 0.65);		
@@ -345,8 +352,7 @@ div  {
 }
 @media (max-width: 500px) {
 	.hideMore{
-		display:none !important;
-			
+		display:none !important;			
 	}
 	
 }
