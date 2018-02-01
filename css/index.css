@@ -117,7 +117,7 @@ a:hover {filter:brightness(.65);}
 	
 section img{
 	width:100%;
-	margin: 10px;
+	margin-bottom:15px;
 	z-index: -1;	
 }
 
@@ -378,8 +378,3 @@ div  {
   width: 1px;
  }
  
- .cardContainer{
-	 display:block;
-	 margin:0 auto;
-	 max-width: 80%;
- }
