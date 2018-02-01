@@ -84,8 +84,9 @@ h2 {
 	text-transform: uppercase;	
 }
 
-section{max-width:1200px;
-		margin:100px auto;
+section{
+	max-width:1200px;
+	margin:100px auto;
 }
 
 section p {	
@@ -94,7 +95,7 @@ section p {
 	text-align:center;
 	line-height: 1.5rem;
 	letter-spacing: 0.5px;
-	width: 80vw;     
+	
 	font-size:20px;
 }
 
