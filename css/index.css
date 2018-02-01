@@ -81,14 +81,11 @@ h2 {
 	margin-top:50px;
 	text-align: center;
 	font-size: 3rem;
-	text-transform: uppercase;
-	
+	text-transform: uppercase;	
 }
 
-section{max-width:80%;
+section{max-width:1200px;
 		margin:100px auto;
-
-		
 }
 
 section p {	
@@ -103,13 +100,9 @@ section p {
 
 
 .container{	
-	max-width: 1200px;
 	margin:0 auto; 
-	
 	text-decoration:none;
-	background-color:none; 
-
-	
+	background-color:none; 	
 }
 
 a:hover {filter:brightness(.65);}
