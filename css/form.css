@@ -12,7 +12,8 @@ body {
 -moz-osx-font-smoothing: grayscale;  
 }
 
-html {	font:  normal 1rem  'Open Sans', sans-serif;  		
+html {	
+    font:  normal 1rem  'Open Sans', sans-serif;  		
     box-sizing: border-box;		  
     background-color: rgba(255, 255, 255, 0.95);
 }
@@ -73,13 +74,13 @@ li {list-style-type: none;}
     border: 2px solid;
     margin: 90px auto;
     text-align: left;
-    font-size: 1em;
+    font-size: 1rem;
     color:black;  
 }	
         
 
 main { 
-    width: 40vw; 
+    width: 450px; 
     padding:50px 20px; 
     box-sizing: border-box;  
     margin: 0 auto;
@@ -109,7 +110,7 @@ label {
 p { text-transform: uppercase; 
     color: black; 
     margin-bottom: 0;
-    line-height: 1.5em; 
+    line-height: 1.5rem; 
 }
 
 h1 {
@@ -260,7 +261,7 @@ video#vid {
 	padding:7px 15px 0px 15px;
 	color:#999;
 	border:0;
-	font-size:1.4em;
+	font-size:1.4rem;
 	font-weight:bold;
 	cursor:pointer;
 	outline:none;
@@ -276,7 +277,7 @@ video#vid {
 	padding:7px 15px 0px 15px;
 	color:#999;
 	border:0;
-	font-size:3em;
+	font-size:3rem;
 	line-height:65px;
 	font-weight:bold;
 	cursor:pointer;
@@ -298,6 +299,9 @@ video#vid {
 	.magic{
 	display:block !important;	
     }
+    main{
+        max-width:50vw;
+    }
 
 }
 
@@ -309,16 +313,12 @@ video#vid {
 	.magicSpace{
 		visibility:hidden !important;
 	}
-	nav li {
-		float:none !important;	
-	}
+
 	.noMagic { 
 		visibility:visible; 
 		margin: 0 auto; 
     }	
-    main{
-        width:50vw;
-    }
+
     .overlay{
         background-color: rgba(192,208,214,.5);
     }
@@ -326,12 +326,28 @@ video#vid {
 
 }
 @media (max-width: 600px) {
+    nav li {
+		float:none !important;	
+	}
 	.menu{
 		height:100vh;
 		background-color: rgba(255, 255, 255, 0.753);
     }
+
     main{
         width:65vw;
     }
 
 }
+.assistive
+ {
+ clip-path: inset(100%);
+ clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; /* added line */
+  width: 1px;
+ }
+ 

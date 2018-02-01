@@ -6,55 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="css\form.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="css\form.css">
 </head>
-
 <body>
-<!-- expandable -->
-<header>
-	<button class="hamburger hide">&#9776;</button> 
-	<button class="cross hide">&#735;</button>		
-	<nav class="menu ">
-		<ul >	
-			<div class="w3-row">
-				<div class="w3-col m3 s12 ">
-					<li><a class = "nav-type" href="index.html?#inicio">Ínicio</a></li>
-				</div>
-				<div class="w3-col m3 s12 ">
-					<li><a class = "nav-type" href="index.html?#noticias">Notícias</a></li>
-				</div>
-				<div class="w3-col m3 s12 ">
-					<li><a class = "nav-type" href="index.html?#viagens">Viagens</a></li>
-				</div>
-				<div class="w3-col m3 s12 ">
-					<li><a class = "nav-type" href="index.html?#info">Info</a></li>                  
-				</div>
-			</div>	
-		</ul>
-	</nav>
-</header>
-
-<aside >
-	<div  class="onoffswitch" id="btn_query" >
-		<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-		<label class="onoffswitch-label" for="myonoffswitch">
+	<header>
+		<!-- expandable -->
+		<button class="hamburger hide">&#9776;</button> 
+		<button class="cross hide">&#735;</button>		
+		<nav class="menu magic">
+			<h1 class="assistive">Formulário Início </h1>	
+			<ul>	
+				<li><a class = "nav-type" href="index.html?#inicio">Ínicio</a></li>			
+				<li><a class = "nav-type" href="index.html?#noticias">Notícias</a></li>			
+				<li><a class = "nav-type" href="index.html?#viagens">Viagens</a></li>		
+				<li><a class = "nav-type" href="index.html?#info">Info</a></li>          
+			</ul>
+		</nav>
+	</header>	
+	<aside>
+		<h1 class="assistive">Vídeo Content</h1>
+		<div class="onoffswitch" id="btn_query" >
+			<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
+			<label class="onoffswitch-label" for="myonoffswitch">
 				<span class="onoffswitch-inner"></span>
-			<span class="onoffswitch-switch"></span>
-		</label>
-	</div>
-</aside>
+				<span class="onoffswitch-switch"></span>
+			</label>
+		</div>
+	</aside>
 	<section class="container">
 		<video playsinline autoplay muted loop poster="images/form/palmtrees.jpg" id="vid" class="vdo_query">
      		<source src="videos/landscape.mp4" type="video/mp4">
 		</video>
 	</section>
 	<main class="overlay">
+		<h1 class="assistive">Formulário</h1>	   
 		<div class="w3-row">
 			<div class="w3-col l12 m12 s12 w3-center ">
 				<form action="action.html" method="post">
-					<h1>Viagens e Passeios</h1>
-					
+					<h1>Viagens e Passeios</h1>					
 					<div >
 						<label for="nome">Nome</label><br>
 						<input type="text" minlength="2" required />

@@ -40,7 +40,7 @@ nav {
 }
 nav ul {
 	display: inline-block;
-	margin: auto;
+	margin:0 auto;
 }
 nav a {
 	text-decoration: none;
@@ -66,7 +66,7 @@ li {list-style-type: none;}
 
 
 
-h1  {
+h1 {
 	margin: 175px auto;
 	font-family: sans-serif;
 	font-size:96px;
@@ -80,12 +80,12 @@ h1  {
 h2 {
 	margin-top:50px;
 	text-align: center;
-	font-size: 3em;
+	font-size: 3rem;
 	text-transform: uppercase;
 	
 }
 
-section{width:100%;
+section{max-width:80%;
 		margin:100px auto;
 
 		
@@ -95,7 +95,7 @@ section p {
 	margin:0 auto;
 	font-weight:bold;
 	text-align:center;
-	line-height: 1.5em;
+	line-height: 1.5rem;
 	letter-spacing: 0.5px;
 	width: 80vw;     
 	font-size:20px;
@@ -103,13 +103,13 @@ section p {
 
 
 .container{	
-	display:table;
-	margin:10px auto; 
+	max-width: 1200px;
+	margin:0 auto; 
+	
 	text-decoration:none;
 	background-color:none; 
-	width:300px;
-	height:300px; 
-	position:relative;
+
+	
 }
 
 a:hover {filter:brightness(.65);}
@@ -117,17 +117,22 @@ a:hover {filter:brightness(.65);}
 	
 section img{
 	width:100%;
+	margin: 10px;
 	z-index: -1;	
+}
+
+.centerText{
+	position:relative;
 }
 
 .imgText{ 
 	top: 50%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
-	font-size: 2em;  		
+	font-size: 2rem;  		
 	color: hsl(60, 100%, 50%);
 	display: none;
-	line-height: 1.5em;
+	line-height: 1.5rem;
 	
 }
 
@@ -149,16 +154,16 @@ section img:hover +  p {
 }
 
 .info {
-	font-size:16px;
+	font-size:15px;
 	font-weight:normal;
 	text-align:left;
-	line-height:1.5em;
+	line-height:1.5rem;
 	letter-spacing:0.5px;	
 	width:80%;     
-	padding:15px;  
-	background-color:rgba(192,208,214, .3);
-	border-radius:10px;
-	background-clip: content-box;		
+	padding:20px;  
+	background-color:rgba(192,208,214, .54);
+	border-radius:5px;
+		
 }
 
 
@@ -166,10 +171,13 @@ section img:hover +  p {
 
 article{
 	/*outline:1px solid  black;*/
+	max-width:1200px;
 	overflow:hidden;
 	width:80%;
 	margin:80px auto;
+	line-height: 1.5rem;
 }
+
 div.novidades{		
 	width: 30%; 		
 	float: right;
@@ -278,7 +286,7 @@ div  {
 	padding:7px 15px 0px 15px;
 	color:#999;
 	border:0;
-	font-size:1.4em;
+	font-size:1.4rem;
 	font-weight:bold;
 	cursor:pointer;
 	outline:none;
@@ -294,7 +302,7 @@ div  {
 	padding:7px 15px 0px 15px;
 	color:#999;
 	border:0;
-	font-size:3em;
+	font-size:3rem;
 	line-height:65px;
 	font-weight:bold;
 	cursor:pointer;
@@ -308,13 +316,14 @@ div  {
     width: 100%;
 }
 
-@media (min-width:767px){
+@media (min-width:768px){
 	.hide{
 	display:none !important;	
 	}	
 	.magic{
 	display:block !important;	
 	}
+
 }
 
 
@@ -325,9 +334,7 @@ div  {
 	.magicSpace{
 		visibility:hidden !important;
 	}
-	nav li {
-		float:none !important;	
-	}
+
 	.readable{
 		width:80vw;
 	}
@@ -349,6 +356,9 @@ div  {
 		height:100vh;
 		background-color: rgba(255, 255, 255, 0.753);
 	}
+	nav li {
+		float:none !important;	
+	}
 }
 @media (max-width: 500px) {
 	.hideMore{
@@ -356,3 +366,20 @@ div  {
 	}
 	
 }
+.assistive
+ {
+ clip-path: inset(100%);
+ clip: rect(1px 1px 1px 1px); /* IE 6/7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; /* added line */
+  width: 1px;
+ }
+ 
+ .cardContainer{
+	 display:block;
+	 margin:0 auto;
+	 max-width: 80%;
+ }
